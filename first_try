@@ -1,0 +1,7 @@
+import subprocess
+
+airfoil="airfoil1"
+with open("input.txt", "w") as input:
+    input.write("LOAD " + airfoil + ".csv\n"+ airfoil +"\n"+"OPER\n" + "VISC 10000.0\n" + "ITER 200\n" + "MACH 0.1\n" + "PACC\n"+airfoil+".log\n"+"\n"+"ALFA 0.0\n"+"\n"+"quit")
+
+subprocess.call("xfoil.exe < input.txt", shell=True) 
