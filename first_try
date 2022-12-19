@@ -7,7 +7,6 @@ with open("input.txt", "w") as input:
 
 subprocess.call("xfoil.exe < input.txt", shell=True) 
 
-
 values= open(airfoil+".log","r")
 content=values.readlines()
 line=content[12]
