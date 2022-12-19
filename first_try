@@ -10,12 +10,11 @@ subprocess.call("xfoil.exe < input.txt", shell=True)
 
 values= open(airfoil+".log","r")
 content=values.readlines()
-text=content[12]
-text=text[:len(text)-1]
-text=text.split()
+line=content[12]
+line=line.split()
 
-cl= float(text[1])
-cd= float(text[2])
+cl= float(line[1])
+cd= float(line[2])
 
 print ("CL=",cl,"  CD=",cd)
 print("Performans değeri=",cl/cd)
