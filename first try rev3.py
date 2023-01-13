@@ -1,4 +1,4 @@
-def perf_deg(path):
+def perf_deg(path=r"C:\Users\PC\Desktop\TENSORFLOW\deney\airfoils"):
     
 import subprocess
 import os
