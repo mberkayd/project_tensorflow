@@ -1,0 +1,12 @@
+LOAD airfoil1.csv
+airfoil1.csv
+OPER
+VISC1800000.0
+ITER0.01
+MACH0.0
+PACC
+airfoil1.log
+
+ALFA200
+
+quit
